@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "997531ae-1665-4f0f-84d4-7de4002371ce",
+		"name": "python-flask-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add sample",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"test foo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sample",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All samples",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/samples",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"samples"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get sample",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sample?name=Hello",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sample"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Hello"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
